@@ -24,6 +24,7 @@ def add_notes():
 def show_info():
     with open('notes.txt', 'r', encoding='UTF-8') as file:
         notes_list = file.read().rstrip().split('\n\n')
+        #print(notes_list)
         print(file.read().rstrip())
         for note in enumerate(notes_list,1):
             print(*note)
